@@ -1,10 +1,85 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="zh_TW">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+            <h1 class="mb-0">
+                <a class="navbar-brand bg-cover" href="./index.html">D'Perfume</a>
+            </h1>
+            <button type="button" class="btn-carts d-lg-none ml-auto bg-white border-0 text-secondary mr-3">
+                <span class="material-icons">
+                    shopping_cart
+                </span>
+                <span class="badge badge-primary carts-num">3</span>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-flex justify-content-center border border-white" href="./products.html">
+                            <span class="material-icons d-none d-lg-inline">
+                            store
+                            </span>
+                            Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-flex justify-content-center border border-white" href="./login.html">
+                            <span class="material-icons d-none d-lg-inline">
+                            person
+                            </span>
+                            log in
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-flex justify-content-center border border-white" href="#">
+                            <span class="material-icons d-none d-lg-inline">
+                                favorite
+                            </span>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-none d-lg-flex justify-content-center" href="#">
+                            <span class="material-icons d-none d-lg-inline">
+                                shopping_cart
+                            </span>
+                            Cart(3)
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-flex justify-content-center border border-white" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link px-3 py-3 py-lg-2 bg-secondary bg-lg-white text-white text-lg-secondary d-flex justify-content-center border border-white" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        
+        
+    </header>
+
+    
 <div class="banner bg-cover container-fluid">
     <div class="container h-100 d-flex justify-content-center align-items-center">
         <div class="row w-100 justify-content-end">
@@ -169,3 +244,32 @@ current: index
         </div>
     </div>
 </section>
+    
+
+    <footer class="bg-primary py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-4 d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">
+                        <a href="./index.html" class="footer-logo">D'Perfume</a>
+                    </h2>
+                    <small class="copyright text-white">© 2020. All Rights Reserved.</small>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <ul class="list-unstyled d-flex justify-content-end pl-0 mb-0">
+                        <li class="nav-item"><a href="./products.html" class="nav-link text-white">Product</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>   
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
