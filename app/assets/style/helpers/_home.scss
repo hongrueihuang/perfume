@@ -1,0 +1,91 @@
+.banner {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg');
+    height: 480px;
+
+    .banner-slogan {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .banner-content {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+.content {
+    padding: 40px 0;
+
+    .content-image {
+        height: 350px;
+    }
+
+    .content-image-long {
+        height: 680px;
+    }
+}
+
+.hot {
+    padding: 32px 0;
+}
+
+.recycle {
+    padding: 40px 0;
+
+    .recycle-image {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index9.jpg');
+        height: 520px;
+    }
+}
+
+.subscription {
+    height: 600px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg');
+    padding-top: 312px;
+    padding-bottom: 192px;
+
+    .border {
+        border-width: 2px !important;
+    }
+
+    .form-control {
+        height: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .banner {
+        height: 870px;
+
+        .banner-slogan {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        .banner-content {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    .content {
+        padding: 60px 0;
+
+        .content-image {
+            height: 555px;
+        }
+
+        .content-image-long {
+            height: 1080px;
+        }
+    }
+
+    .hot {
+        padding: 40px 0;
+    }
+
+    .recycle {
+        padding: 60px 0;
+    }
+}

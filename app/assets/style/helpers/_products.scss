@@ -1,0 +1,27 @@
+.products {
+    .card-img-top {
+        height: 165px;
+    }
+}
+
+.pagination {
+    .page-link {
+        color: $dark;
+    }
+
+    .page-item.active, .page-item:hover, .page-item:focus {
+        .page-link {
+            color: $primary;
+            background-color: #fff;
+            border-bottom: 2px solid $primary !important;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .products {
+        .card-img-top {
+            height: 255px;
+        }
+    }
+}

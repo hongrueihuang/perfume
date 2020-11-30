@@ -1,0 +1,10 @@
+.login-image {
+    height: 220px;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/login1.jpg');
+}
+
+@media (min-width:768px) {
+    .login-image {
+        height: 730px;
+    }
+}

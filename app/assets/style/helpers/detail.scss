@@ -1,0 +1,31 @@
+.narrow {
+    &.narrow-top {
+        height: 220px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product1.jpg');
+    }
+
+    &.narrow-bottom {
+        height: 460px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product1.jpg');
+    }
+}
+
+.longer {
+    height: 640px;
+
+    &.longer-left {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product2.jpg');
+    }
+
+    &.longer-right {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/product3.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .narrow {
+        &.narrow-top {
+            height: 460px;
+        }
+    }
+}

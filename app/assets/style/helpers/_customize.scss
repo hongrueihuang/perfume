@@ -1,0 +1,128 @@
+
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-brand {
+    width: 128px;
+    height: 38px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("../images/d’Perfume.png");
+    box-sizing: border-box;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn-carts {
+    position: relative;
+
+    .carts-num {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+    }
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 128px;
+    height: 38px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url("../images/d’Perfumew.png");
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.list-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.list-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.btn {
+    border-width: 2px;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.card-img-top-wrap {
+    position: relative;
+
+    &::after {
+        content: "Sold out";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: $white;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+}
+
+.card-img-top {
+    height: 350px;    
+}
+
+.category {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media (min-width: 992px) {
+    .text-lg-secondary {
+        color: $secondary !important;
+    }
+
+    .bg-lg-white {
+        background-color: #fff !important;
+    }
+
+    .nav-link.bg-lg-white:hover {
+        color: $primary !important;
+        background-color: #fff !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        height: 540px;
+    }
+}
